@@ -1,0 +1,26 @@
+! Users should add all user specific namelist changes below in the form of 
+! namelist_var = new_namelist_value 
+
+drydep_srf_file               = '/glade/p/cesmdata/inputdata/atm/cam/chem/trop_mam/atmsrf_mpasa3.75_20210804.nc'
+mpas_dt                       =  20.0D0
+mpas_len_disp                 = 3750.0D0
+cld_macmic_num_steps          = 1
+micro_mg_num_steps            = 1 
+iradsw = 10
+iradlw = 10
+bnd_topo = '/lustre/desc1/scratch/bdobbins/ncsa/topo/cube_to_target/output/mpasa3p75_gmted2010_modis_bedmachine_nc3000_Laplace0004_noleak_20241006.nc'
+mpas_block_decomp_file_prefix = '/glade/work/sima/data/mpas/3.75km/x1.41943042.graph.info.part.'
+
+ncdata = '/lustre/desc1/scratch/bdobbins/ic_creation/squall_line_3.75km/ic/flthist_squall_3.75km.init.nc'
+
+
+fincl1 = 'PSL', 'PS', 'T', 'U', 'V', 'Q', 'OMEGA', 'PMID', 'PRECC', 'PRECL', 'FLUT', 'FSNT', 'FLNT', 'FSNS', 'FLNS', 'SWCF', 'LWCF', 'LHFLX', 'SHFLX', 'TAUX', 'TAUY', 'TMQ', 'CLDTOT',  'CLDLOW', 'CLDHGH', 'TGCLDIWP', 'TGCLDLWP', 'TREFHT', 'TS', 'U10'
+fincl2 = 'T', 'U', 'V', 'Q', 'OMEGA', 'PMID', 'Z3'
+fincl3 = 'CLDTOT',  'CLDLOW', 'CLDHGH', 'TGCLDIWP', 'TGCLDLWP'
+fincl4 = 'PS:I','PSL:I','TS:I','TREFHT:I','QREFHT:I','PHIS:I','U10:I','PMID:I','PINT:I','Q:I','RELHUM:I','T:I','U:I','V:I','Z3:I','DTCOND:I','STEND_CLUBB:I','MPDT:I','DPDLFT:I','PTTEND:I','QRS:I','QRL:I','DTV:I','TTGWORO:I','REFL10CM:I','CLOUD:I','CLDTOT:I','FLUT:I','FLNT:I','LHFLX:I','SHFLX:I','UMS:I','VTRMI:I','CLDICE:I','PRECC:A','PRECL:A','uReconstructZonal:I','uReconstructMeridional:I','RELHUM:I','CLDLIQ:I','CLDICE:I','RAINQM:I','SNOWQM:I','GRAUQM:I','NUMLIQ:I','NUMICE:I','NUMRAI:I','NUMSNO:I','NUMGRA:I', 'CME:A', 'EVAPPREC:A'
+nhtfrq = -3, -3, 10, -1
+mfilt = 8, 8, 144, 1
+
+microp_uniform = .true.
+deep_scheme = 'off'
+use_gw_convect_dp = .false.

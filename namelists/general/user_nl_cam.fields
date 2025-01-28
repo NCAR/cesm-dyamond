@@ -1,0 +1,12 @@
+! Users should add all user specific namelist changes below in the form of 
+! namelist_var = new_namelist_value 
+
+fincl1 = 'PSL', 'PS', 'T', 'U', 'V', 'Q', 'OMEGA', 'PMID', 'PRECC', 'PRECL', 'FLUT', 'FSNT', 'FLNT', 'FSNS', 'FLNS', 'SWCF', 'LWCF', 'LHFLX', 'SHFLX', 'TAUX', 'TAUY', 'TMQ', 'CLDTOT',  'CLDLOW', 'CLDHGH', 'TGCLDIWP', 'TGCLDLWP', 'TREFHT', 'TS', 'U10'
+fincl2 = 'T', 'U', 'V', 'Q', 'OMEGA', 'PMID', 'Z3'
+fincl3 = 'CLDTOT',  'CLDLOW', 'CLDHGH', 'TGCLDIWP', 'TGCLDLWP'
+fincl4 = 'PS:I','PSL:I','TS:I','TREFHT:I','QREFHT:I','PHIS:I','U10:I','PMID:I','PINT:I','Q:I','RELHUM:I','T:I','U:I','V:I','Z3:I','DTCOND:I','STEND_CLUBB:I','MPDT:I','DPDLFT:I','PTTEND:I','QRS:I','QRL:I','DTV:I','TTGWORO:I','REFL10CM:I','CLOUD:I','CLDTOT:I','FLUT:I','FLNT:I','LHFLX:I','SHFLX:I','UMS:I','VTRMI:I','CLDICE:I','PRECC:A','PRECL:A','uReconstructZonal:I','uReconstructMeridional:I','RELHUM:I','CLDLIQ:I','CLDICE:I','RAINQM:I','SNOWQM:I','GRAUQM:I','NUMLIQ:I','NUMICE:I','NUMRAI:I','NUMSNO:I','NUMGRA:I', 'CME:A', 'EVAPPREC:A'
+nhtfrq = -3, -3, 10, -1
+mfilt = 8, 8, 144, 1
+
+
+

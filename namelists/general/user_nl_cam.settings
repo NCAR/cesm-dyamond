@@ -1,0 +1,3 @@
+microp_uniform = .true.
+deep_scheme = 'off'
+use_gw_convect_dp = .false.
